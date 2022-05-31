@@ -2,8 +2,9 @@
 pragma solidity >=0.8.0 <0.9.0;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
+import "./VRFv2Consumer.sol";
 
-contract EvenOdd is Ownable {
+contract EvenOdd is Ownable, VRFv2Consumer {
   uint8 constant EVEN_DOOR = 0;
   uint8 constant ODD_DOOR = 1;
   uint8 constant FEE_RATE = 2;
